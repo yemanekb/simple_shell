@@ -28,7 +28,7 @@ char *line = NULL, *pathcommand = NULL, *path = NULL;
 		if (linesize < 0)
 			break;
 		info.ln_count++;
-		if (line[linesize - 1] == '\n')	
+		if (line[linesize - 1] == '\n')
 			line[linesize - 1] = '\0';
 		command = tokenizer(line);
 		if (command == NULL || *command == NULL || **command == '\0')
